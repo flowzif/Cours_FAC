@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="steelsheet" href="/media/css/style.css" />
+	<title>Mon blog</title>
+</head>
+<body>
+{% block head %}
+<header> 
+<h1> Cours Faculté Informatique</h1>
+    
+<!-- Connexion -->
+{% comment %}
+{% if error %}
+
+    
+{% endif %}
+{% if user.is_authenticated %}
+    <p>Vous êtes connecté, {{ user.username }}</p>
+    <p>Deconnexion</p>
+{% else %}
+    <form method="post" action=".">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Se connecter" />
+    </form>
+{% endif %}
+{% endcomment %}
+<!-- Fin de connexion -->
+    
+<nav>
+<ul>
+    <li>Actualité</li>
+    <li>Mes Cours</li>
+    <li>Cours Partager</li>
+    <li>Forum</li>
+    <li>Stage</li>
+    <li>Annonce</li>
+</ul>    
+</nav>
+</header>
+{% endblock %}
+{% block content %}
+
+{% endblock %}
+{% block foot %}
+<footer>
+
+</footer>
+ {% endblock %}
+ </body>
+ </html>
