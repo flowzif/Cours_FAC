@@ -21,3 +21,10 @@
 * liste de matiere
 * liste de cours
 * liste d'amis
+
+## Annonce
+
+* ID annonce "Primary key"
+* titre
+* createur Annonce "Foreign key user"
+* url dossier des fichiers ID_titre
