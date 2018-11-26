@@ -1,6 +1,6 @@
 # Schemas des BDD
 
-### Cours
+## Cours
 
 * ID <Primary key>
 * nom cours
@@ -9,3 +9,15 @@
 * matiere <Foreign key Matiere>
 * type (td/tp/cm/annexe/fichederevision)
 * visibilite : all/private
+
+## Matière
+
+* ID matiere <Primary key>
+* nom matière <Unique>
+
+## Utilisateur
+
+* EXTENSION DE DJANGO USER
+* liste de matiere
+* liste de cours
+* liste d'amis
