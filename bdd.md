@@ -2,18 +2,18 @@
 
 ## Cours
 
-* ID <Primary key>
+* ID "Primary key"
 * nom cours
-* createur du cours <Foreign key User>
+* createur du cours "Foreign key User"
 * url dossier des fichiers (ID_nomcours/)
-* matiere <Foreign key Matiere>
+* matiere "Foreign key Matiere"
 * type (td/tp/cm/annexe/fichederevision)
 * visibilite : all/private
 
 ## Matière
 
-* ID matiere <Primary key>
-* nom matière <Unique>
+* ID matiere "Primary key"
+* nom matière "Unique"
 
 ## Utilisateur
 
